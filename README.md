@@ -1,12 +1,16 @@
 # Green-plant-disease-identification-and-detection-system
 ## 项目名称（The name of the project）
 本项目是基于YOLOv5目标检测算法和U-Net图像分割算法的绿植病害识别与检测系统
+Based on YOLOv5 object detection algorithm and U-Net image segmentation algorithm。
 
 ## 使用
 * 本项目未上传model文件（下文有联系方式）
 * 本项目是首次上传GitHub，有任何运行不了的问题，请不要生气，一定是作者本人的问题，可以向我询问任何问题，包括但不限于本项目
-  
-Based on YOLOv5 object detection algorithm and U-Net image segmentation algorithm。
+
+## Use
+* The model file is not uploaded for this project (contact information is available below)
+* This project is uploaded to GitHub for the first time, if there is any problem that does not run, please do not be angry, it must be the author's own problem, you can ask me any questions, including but not limited to this project
+
 ## 项目介绍（Project Introduction）
 本项目旨在通过结合YOLOv5目标检测算法和U-Net图像分割算法，构建一个高效、准确的绿植病害识别与检测系统。该系统能够自动识别并检测绿植叶片上的病害，为农业生产提供技术支持和辅助决策。
 
