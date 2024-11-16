@@ -9,6 +9,9 @@ Based on YOLOv5 object detection algorithm and U-Net image segmentation algorith
 * “save”文件夹下应有两个文件夹，分别问“savephotos”、“takephotos”
 * 本项目是首次上传GitHub，有任何运行不了的问题，请不要生气，一定是作者本人的问题，可以向我询问任何问题，包括但不限于本项目
 
+## 演示视频
+* 链接：https://youtu.be/WAWpSarjfoc
+
 ## Use
 * The model file is not uploaded for this project (contact information is available below)
 * You can create a model folder in the home directory and put the self-trained model file into the name according to the name in the code
