@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>ECharts</title>
+
+    <script src="{{ url_for('static', filename='echarts.min.js') }}"></script>
+</head>
+<body>
+
+<div align="center"></div>
+
+    <div id="main" style="width: 600px;height:400px;"></div>
+
+<script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+//模板语法
+        var mannum = "{{male_num }}";
+        var womennum = "{{ female_num }}";
+
+        option_pie = {
+            title: {
+                text: '班级性别统计',
+                x: 'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['男', '女']
+            },
+            series: [
+                {
+                    name: '性别',
+                    type: 'pie',
+                    radius: '55%',
+                    center: ['40%', '60%'],
+                    data: [
+                        {value: [mannum], name: '男'},
+                        {value: [womennum], name: '女'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ],
+            color: ['rgb(131,175,155)', 'rgb(252,157,154)', 'rgb(249,205,173)', 'rgb(200,200,169)']
+        };
+        function makePie() {
+            myChart.clear();
+            myChart.setOption(option_pie);
+        }
+        makePie()
+</script>
+</body>
+</html>
+
